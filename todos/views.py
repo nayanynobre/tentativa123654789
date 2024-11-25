@@ -11,6 +11,7 @@ def todo_create(request):
     return HttpResponse("Página de criação de tarefas.")
 
 from django.views.generic.edit import CreateView
+from .models import Todo
 from django.urls import reverse_lazy
 
 class TodoCreateView(CreateView):
